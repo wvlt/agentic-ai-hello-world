@@ -33,6 +33,8 @@ videos/
   assets/                   <- shared diagrams reused across videos
     you-are-here-template.svg
     agent-anatomy.svg
+  tools/                    <- maintainer tools (not part of the lessons)
+    svg-preview             <- renders every diagram and flags text running off the canvas
   01-what-is-an-agent/      <- one folder per video
   02-.../
 ```
