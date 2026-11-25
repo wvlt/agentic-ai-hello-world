@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="430" fill="#FFFFFF"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">What comes back: anatomy of a response</text>
+
+  <!-- response -->
+  <rect x="20" y="56" width="860" height="350" rx="16" fill="#F9FAFB" stroke="#6B7280" stroke-width="2"/>
+  <text x="40" y="84" font-size="16" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">response</text>
+
+  <!-- choices -->
+  <rect x="40" y="100" width="530" height="290" rx="12" fill="#FFFFFF" stroke="#FF3621" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="58" y="126" font-size="14" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">.choices</text>
+  <text x="150" y="126" font-size="12" fill="#6B7280">a list - one answer per item (usually just one)</text>
+
+  <rect x="58" y="140" width="494" height="234" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="3"/>
+  <text x="74" y="166" font-size="14" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">[0]</text>
+
+  <g font-size="13">
+    <text x="88" y="200" font-family="Menlo, Consolas, monospace" fill="#111827">.message.role</text>
+    <text x="300" y="200" fill="#374151">always "assistant"</text>
+    <text x="88" y="236" font-family="Menlo, Consolas, monospace" font-weight="bold" fill="#111827">.message.content</text>
+    <text x="300" y="236" font-weight="bold" fill="#111827">the reply text</text>
+    <text x="88" y="272" font-family="Menlo, Consolas, monospace" fill="#9CA3AF">.message.tool_calls</text>
+    <text x="300" y="272" fill="#9CA3AF">functions to run (Video 06)</text>
+    <line x1="80" y1="292" x2="530" y2="292" stroke="#FBCFC7" stroke-width="2"/>
+    <text x="88" y="322" font-family="Menlo, Consolas, monospace" font-weight="bold" fill="#111827">.finish_reason</text>
+    <text x="300" y="322" font-weight="bold" fill="#111827">WHY it stopped</text>
+    <text x="300" y="342" fill="#6B7280">stop / length / tool_calls</text>
+  </g>
+
+  <!-- usage -->
+  <rect x="590" y="100" width="270" height="180" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/>
+  <text x="608" y="126" font-size="14" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">.usage</text>
+  <text x="680" y="126" font-size="12" fill="#6B7280">what you pay for</text>
+  <g font-size="13">
+    <text x="608" y="162" font-family="Menlo, Consolas, monospace" fill="#111827">.prompt_tokens</text>
+    <text x="608" y="180" fill="#6B7280">tokens you sent (input)</text>
+    <text x="608" y="212" font-family="Menlo, Consolas, monospace" fill="#111827">.completion_tokens</text>
+    <text x="608" y="230" fill="#6B7280">tokens the model wrote (output)</text>
+    <text x="608" y="262" font-family="Menlo, Consolas, monospace" fill="#111827">.total_tokens</text>
+  </g>
+
+  <!-- metadata -->
+  <rect x="590" y="296" width="270" height="94" rx="12" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  <text x="608" y="322" font-size="14" font-weight="bold" fill="#374151">Metadata</text>
+  <text x="608" y="346" font-size="13" font-family="Menlo, Consolas, monospace" fill="#6B7280">.id  .model  .created</text>
+  <text x="608" y="368" font-size="12" fill="#6B7280">useful for logs and debugging</text>
+
+  <text x="450" y="424" text-anchor="middle" font-size="13" fill="#374151">The text lives at response.choices[0].message.content - now you know why.</text>
+</svg>

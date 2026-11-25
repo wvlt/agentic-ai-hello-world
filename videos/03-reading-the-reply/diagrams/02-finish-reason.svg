@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="340" viewBox="0 0 900 340" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="340" fill="#FFFFFF"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">finish_reason: why did the model stop?</text>
+
+  <!-- stop -->
+  <rect x="30" y="64" width="260" height="220" rx="14" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <text x="160" y="100" text-anchor="middle" font-size="20" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">"stop"</text>
+  <text x="160" y="132" text-anchor="middle" font-size="15" fill="#111827">Finished naturally</text>
+  <line x1="50" y1="152" x2="270" y2="152" stroke="#A7F3D0" stroke-width="2"/>
+  <text x="160" y="180" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Your code:</text>
+  <text x="160" y="202" text-anchor="middle" font-size="13" fill="#374151">use the answer</text>
+
+  <!-- length -->
+  <rect x="320" y="64" width="260" height="220" rx="14" fill="#FFFBEB" stroke="#F59E0B" stroke-width="3"/>
+  <text x="450" y="100" text-anchor="middle" font-size="20" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">"length"</text>
+  <text x="450" y="132" text-anchor="middle" font-size="15" fill="#111827">Hit max_tokens</text>
+  <text x="450" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="#B45309">the answer is CUT OFF</text>
+  <line x1="340" y1="164" x2="560" y2="164" stroke="#FDE68A" stroke-width="2"/>
+  <text x="450" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Your code:</text>
+  <text x="450" y="212" text-anchor="middle" font-size="13" fill="#374151">don't trust it - warn,</text>
+  <text x="450" y="230" text-anchor="middle" font-size="13" fill="#374151">raise max_tokens, or</text>
+  <text x="450" y="248" text-anchor="middle" font-size="13" fill="#374151">ask for a shorter answer</text>
+
+  <!-- tool_calls -->
+  <g opacity="0.6">
+    <rect x="610" y="64" width="260" height="220" rx="14" fill="#F9FAFB" stroke="#6B7280" stroke-width="3" stroke-dasharray="7 5"/>
+    <text x="740" y="100" text-anchor="middle" font-size="20" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">"tool_calls"</text>
+    <text x="740" y="132" text-anchor="middle" font-size="15" fill="#111827">Wants your code</text>
+    <text x="740" y="150" text-anchor="middle" font-size="15" fill="#111827">to run a tool</text>
+    <line x1="630" y1="164" x2="850" y2="164" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="740" y="190" text-anchor="middle" font-size="13" font-weight="bold" fill="#374151">Your code:</text>
+    <text x="740" y="212" text-anchor="middle" font-size="13" fill="#374151">run it, send the result</text>
+    <text x="740" y="230" text-anchor="middle" font-size="13" fill="#374151">back (Video 06)</text>
+  </g>
+
+  <text x="450" y="318" text-anchor="middle" font-size="15" fill="#374151">Always check finish_reason before trusting an answer. Agents (Video 08) depend on it.</text>
+</svg>

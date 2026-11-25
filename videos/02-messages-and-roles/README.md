@@ -40,4 +40,4 @@
 * **What could go wrong?** A system prompt is a strong suggestion, **not a lock**. We told the model "only answer cooking questions", then the user said "ignore all previous instructions". In our tests Llama 3.3 obeyed the user 3 times out of 3; Claude Haiku refused 3 times out of 3. Real guardrails belong in your code (Video 09).
 
 ## Next
-Video 03 - Reading the reply: `choices`, `finish_reason`, tokens and temperature (coming soon)
+[Video 03 - Reading the reply: `choices`, `finish_reason`, tokens and temperature](../03-reading-the-reply/README.md)

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="390" fill="#FFFFFF"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Temperature: the creativity dial</text>
+
+  <!-- Gauge (centre 450,250 radius 170) -->
+  <g fill="none" stroke-width="30">
+    <path d="M280 250 A170 170 0 0 1 365 102.8" stroke="#3B82F6"/>
+    <path d="M365 102.8 A170 170 0 0 1 535 102.8" stroke="#F59E0B"/>
+    <path d="M535 102.8 A170 170 0 0 1 620 250" stroke="#FF3621"/>
+  </g>
+  <g font-size="15" font-weight="bold" fill="#111827" text-anchor="middle">
+    <text x="280" y="285">0</text>
+    <text x="450" y="56">about 1</text>
+    <text x="620" y="285">1.5+</text>
+  </g>
+  <text x="450" y="228" text-anchor="middle" font-size="22" font-weight="bold" font-family="Menlo, Consolas, monospace" fill="#111827">temperature</text>
+  <text x="450" y="252" text-anchor="middle" font-size="13" fill="#6B7280">how much randomness in word choice</text>
+
+  <!-- Low -->
+  <g font-size="13" fill="#374151">
+    <text x="40" y="130" font-size="16" font-weight="bold" fill="#3B82F6">LOW (0)</text>
+    <text x="40" y="152">Predictable: the same</text>
+    <text x="40" y="170">answer (almost) every time</text>
+    <text x="40" y="196" font-weight="bold">Use for:</text>
+    <text x="40" y="214">facts, extraction, agents</text>
+  </g>
+
+  <!-- High -->
+  <g font-size="13" fill="#374151" text-anchor="end">
+    <text x="860" y="130" font-size="16" font-weight="bold" fill="#FF3621">HIGH (1.5)</text>
+    <text x="860" y="152">Varied and surprising -</text>
+    <text x="860" y="170">sometimes too surprising</text>
+    <text x="860" y="196" font-weight="bold">Use for:</text>
+    <text x="860" y="214">brainstorming, names, stories</text>
+  </g>
+
+  <!-- Test results -->
+  <rect x="110" y="304" width="680" height="66" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="130" y="328" font-size="13" font-weight="bold" fill="#111827">Our test - "Give me one unusual hobby", asked 5 times (Llama 3.3):</text>
+  <text x="130" y="350" font-size="13" fill="#3B82F6">temperature 0: Sand sculpting x5</text>
+  <text x="400" y="350" font-size="13" fill="#FF3621">1.5: Knife throwing, Sand Art, Extreme ironing...</text>
+</svg>

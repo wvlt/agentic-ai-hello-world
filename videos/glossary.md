@@ -22,6 +22,12 @@ Every term used in the series, in plain English, and the video that introduces i
 | **developer role** | Newer OpenAI name for the `system` role. Databricks endpoints accept both. | 02 |
 | **Few-shot prompting** | Teaching a format by including example `user`/`assistant` pairs that you write yourself. | 02 |
 | **Prompt injection** | A user (or text) trying to override your instructions, e.g. "ignore all previous instructions". | 02, 09 |
+| **Response** | Everything the model sends back: `choices`, `usage` and metadata (`id`, `model`, `created`). | 03 |
+| **choices** | A list of answers in the response - usually one, at `choices[0]`. `n` asks for more (not every model supports it). | 03 |
+| **finish_reason** | Why the model stopped: `stop` (done), `length` (cut off by `max_tokens`), `tool_calls` (wants a tool). | 03 |
+| **usage** | Token counts for a call: `prompt_tokens` (input), `completion_tokens` (output), `total_tokens`. | 03 |
+| **max_tokens** | A cap on output tokens. Limits answer length and cost; too low cuts answers off. | 03 |
+| **Temperature** | How much randomness in word choice. Low (0) = predictable, high (1.5) = varied. | 03 |
 
 ## Coming in later videos
-`choices`, `finish_reason`, `temperature` (03) | `context window`, `memory` (04) | `structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
+`context window`, `memory` (04) | `structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
