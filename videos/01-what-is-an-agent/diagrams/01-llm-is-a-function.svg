@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="900" height="280" fill="#FFFFFF"/>
+  <text x="450" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">An LLM is a function: text in, text out</text>
+
+  <!-- Text in -->
+  <rect x="30" y="85" width="240" height="90" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="150" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Text in</text>
+  <text x="150" y="145" text-anchor="middle" font-size="14" fill="#374151">"What is an AI agent?"</text>
+
+  <!-- LLM -->
+  <rect x="340" y="75" width="220" height="110" rx="16" fill="#FFF1EE" stroke="#FF3621" stroke-width="4"/>
+  <text x="450" y="125" text-anchor="middle" font-size="28" font-weight="bold" fill="#111827">LLM</text>
+  <text x="450" y="160" text-anchor="middle" font-size="13" font-family="Menlo, Consolas, monospace" fill="#374151">def llm(text: str) -&gt; str</text>
+
+  <!-- Text out -->
+  <rect x="630" y="85" width="240" height="90" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="750" y="115" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Text out</text>
+  <text x="750" y="145" text-anchor="middle" font-size="14" fill="#374151">"An AI agent is a program..."</text>
+
+  <g stroke="#374151" stroke-width="2.5">
+    <line x1="272" y1="130" x2="336" y2="130" marker-end="url(#arrow)"/>
+    <line x1="562" y1="130" x2="626" y2="130" marker-end="url(#arrow)"/>
+  </g>
+
+  <text x="450" y="230" text-anchor="middle" font-size="16" fill="#111827">That's all it does.</text>
+  <text x="450" y="256" text-anchor="middle" font-size="14" fill="#6B7280">On its own an LLM cannot browse, run code, do exact maths, or remember you.</text>
+</svg>

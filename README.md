@@ -32,3 +32,13 @@ Coming next: **Step 7** (tools over real Unity Catalog data) and **Step 8** (fra
 2. Work through the notebooks in order, running each cell.
 3. Before running a cell, predict what the model will do. Then check.
 4. Finish the exercises at the end of each notebook before moving on.
+
+## Video series (new)
+
+A beginner video series - 13 short videos, one idea each - lives in [`videos/`](videos/README.md). Each video has its own folder with the notebook, solutions, script, SVG diagrams, a "you are here" map, exercises, quiz and cheatsheet.
+
+* Start here: [videos/README.md](videos/README.md)
+* The full plan and topic coverage: [videos/course-map.md](videos/course-map.md)
+* Video 01: [What is an AI agent? + your first LLM call](videos/01-what-is-an-agent/README.md)
+
+The Step 1-6 notebooks above remain as the compact reference version of the course.

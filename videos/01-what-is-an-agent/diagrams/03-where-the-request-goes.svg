@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="330" viewBox="0 0 940 330" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="940" height="330" fill="#FFFFFF"/>
+  <text x="470" y="40" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Where does the request actually go?</text>
+
+  <!-- Notebook -->
+  <rect x="20" y="85" width="280" height="115" rx="12" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="160" y="115" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Your notebook</text>
+  <text x="160" y="142" text-anchor="middle" font-size="13" font-family="Menlo, Consolas, monospace" fill="#374151">openai.OpenAI client</text>
+  <text x="160" y="168" text-anchor="middle" font-size="11" font-family="Menlo, Consolas, monospace" fill="#6B7280">model="databricks-meta-llama-</text>
+  <text x="160" y="184" text-anchor="middle" font-size="11" font-family="Menlo, Consolas, monospace" fill="#6B7280">3-3-70b-instruct"</text>
+
+  <!-- Workspace -->
+  <rect x="350" y="85" width="260" height="115" rx="12" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/>
+  <text x="480" y="115" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Your Databricks workspace</text>
+  <text x="480" y="142" text-anchor="middle" font-size="13" font-family="Menlo, Consolas, monospace" fill="#374151">/serving-endpoints/</text>
+  <text x="480" y="168" text-anchor="middle" font-size="13" fill="#6B7280">signed in as you</text>
+  <text x="480" y="186" text-anchor="middle" font-size="13" fill="#6B7280">no API keys</text>
+
+  <!-- Model -->
+  <rect x="660" y="85" width="260" height="115" rx="12" fill="#FFF1EE" stroke="#FF3621" stroke-width="3"/>
+  <text x="790" y="115" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Model endpoint</text>
+  <text x="790" y="145" text-anchor="middle" font-size="15" fill="#374151">Llama 3.3 70B</text>
+  <text x="790" y="170" text-anchor="middle" font-size="13" fill="#6B7280">hosted by Databricks</text>
+
+  <g stroke="#374151" stroke-width="2.5">
+    <line x1="302" y1="142" x2="346" y2="142" marker-end="url(#arrow)"/>
+    <line x1="612" y1="142" x2="656" y2="142" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Not used -->
+  <rect x="350" y="232" width="260" height="52" rx="10" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="480" y="256" text-anchor="middle" font-size="14" font-family="Menlo, Consolas, monospace" fill="#9CA3AF" text-decoration="line-through">api.openai.com</text>
+  <text x="480" y="275" text-anchor="middle" font-size="12" fill="#9CA3AF">not used - no OpenAI account needed</text>
+  <g stroke="#EF4444" stroke-width="3">
+    <line x1="590" y1="240" x2="604" y2="254"/>
+    <line x1="604" y1="240" x2="590" y2="254"/>
+  </g>
+
+  <text x="470" y="315" text-anchor="middle" font-size="14" fill="#374151">"OpenAI-compatible" is a message format, not a company. Swap the model by changing one line.</text>
+</svg>

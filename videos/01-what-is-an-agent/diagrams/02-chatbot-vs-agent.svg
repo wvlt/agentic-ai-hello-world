@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="400" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="960" height="400" fill="#FFFFFF"/>
+
+  <!-- Panels -->
+  <rect x="15" y="15" width="450" height="370" rx="16" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="495" y="15" width="450" height="370" rx="16" fill="#FFFBEB" stroke="#FDE68A" stroke-width="2"/>
+  <text x="240" y="52" text-anchor="middle" font-size="20" font-weight="bold" fill="#111827">Chatbot: it talks</text>
+  <text x="720" y="52" text-anchor="middle" font-size="20" font-weight="bold" fill="#111827">Agent: it talks AND acts</text>
+
+  <!-- Chatbot -->
+  <rect x="90" y="80" width="300" height="50" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="240" y="110" text-anchor="middle" font-size="14" fill="#111827">You: "What's 15% of my last order?"</text>
+  <rect x="140" y="162" width="200" height="50" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="3"/>
+  <text x="240" y="193" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">LLM</text>
+  <rect x="90" y="244" width="300" height="50" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="240" y="274" text-anchor="middle" font-size="14" fill="#111827">"Sorry, I can't see your orders."</text>
+  <g stroke="#374151" stroke-width="2">
+    <line x1="240" y1="130" x2="240" y2="159" marker-end="url(#arrow)"/>
+    <line x1="240" y1="212" x2="240" y2="241" marker-end="url(#arrow)"/>
+  </g>
+  <text x="240" y="332" text-anchor="middle" font-size="14" fill="#374151">One message in, one message out.</text>
+  <text x="240" y="354" text-anchor="middle" font-size="14" fill="#6B7280">It can only use what it already knows.</text>
+
+  <!-- Agent -->
+  <rect x="570" y="80" width="300" height="50" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="720" y="110" text-anchor="middle" font-size="14" fill="#111827">You: "What's 15% of my last order?"</text>
+  <rect x="600" y="162" width="240" height="50" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="3"/>
+  <text x="720" y="186" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">LLM (brain)</text>
+  <text x="720" y="204" text-anchor="middle" font-size="12" fill="#374151">decides what to do next</text>
+  <rect x="740" y="260" width="180" height="60" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <text x="830" y="285" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Tools (hands)</text>
+  <text x="830" y="305" text-anchor="middle" font-size="12" fill="#374151">look up order, calculate</text>
+  <rect x="520" y="260" width="180" height="60" rx="10" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="610" y="285" text-anchor="middle" font-size="14" font-weight="bold" fill="#111827">Final answer</text>
+  <text x="610" y="305" text-anchor="middle" font-size="13" fill="#374151">"15% of $250 is $37.50"</text>
+  <g stroke="#374151" stroke-width="2" fill="none">
+    <line x1="720" y1="130" x2="720" y2="159" marker-end="url(#arrow)"/>
+    <line x1="780" y1="212" x2="820" y2="257" marker-end="url(#arrow)"/>
+    <path d="M920 290 H934 V187 H843" marker-end="url(#arrow)"/>
+    <line x1="660" y1="212" x2="620" y2="257" marker-end="url(#arrow)"/>
+  </g>
+  <g font-size="12" fill="#374151">
+    <text x="812" y="236">act</text>
+    <text x="884" y="240" text-anchor="middle">repeat</text>
+    <text x="600" y="240" text-anchor="middle">when done</text>
+  </g>
+  <text x="720" y="354" text-anchor="middle" font-size="14" fill="#374151">Decides, acts, looks at the result, repeats - until the goal is reached.</text>
+</svg>
