@@ -49,5 +49,5 @@
     <text x="884" y="240" text-anchor="middle">repeat</text>
     <text x="600" y="240" text-anchor="middle">when done</text>
   </g>
-  <text x="720" y="354" text-anchor="middle" font-size="14" fill="#374151">Decides, acts, looks at the result, repeats - until the goal is reached.</text>
+  <text x="720" y="354" text-anchor="middle" font-size="14" fill="#374151">Decides, acts, checks the result, repeats.</text>
 </svg>
