@@ -40,6 +40,11 @@ Every term used in the series, in plain English, and the video that introduces i
 | **response_format** | The API parameter that passes a JSON schema to the model, constraining its answer. | 05 |
 | **Code fence** | Markdown's ```` ``` ```` wrapper around code. Some models add it around JSON, which breaks `json.loads`. | 05 |
 | **enum** | A schema rule that a value must be one of a fixed list, e.g. positive / negative / neutral. | 05 |
+| **Tool call** | The model's request to run a function: a name plus JSON arguments, returned in `message.tool_calls`. The model never runs it - your code does. | 06 |
+| **Tool definition** | The "menu" entry for a tool: name, description (when to use it) and parameters (a JSON schema). Passed with `tools=[...]`. | 06 |
+| **tool role** | The message role your code uses to send a tool's result back to the model. | 06 |
+| **tool_call_id** | The id of a tool call. Your `tool` message must carry the same id so the model knows which request it answers. | 06, 07 |
+| **Tool round** | One cycle of: model asks for a tool, your code runs it, you send the result, the model answers. Costs two model calls. | 06 |
 
 ## Coming in later videos
-`tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
+`termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)

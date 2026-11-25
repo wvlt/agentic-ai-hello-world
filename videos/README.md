@@ -61,4 +61,5 @@ Every video folder has the same shape:
 | 03 [Reading the reply: choices, finish_reason, tokens and temperature](03-reading-the-reply/README.md) | Ready |
 | 04 [LLMs have no memory](04-no-memory/README.md) | Ready |
 | 05 [Answers code can use: structured JSON output](05-json-answers/README.md) | Ready |
-| 06-13 | Planned (see [course-map.md](course-map.md)) |
+| 06 [Giving the model hands: your first tool](06-first-tool/README.md) | Ready |
+| 07-13 | Planned (see [course-map.md](course-map.md)) |

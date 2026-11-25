@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="390" viewBox="0 0 940 390" font-family="Helvetica, Arial, sans-serif">
+  <rect width="940" height="390" fill="#FFFFFF"/>
+  <text x="470" y="32" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">From a Python function to a tool description</text>
+
+  <!-- Left: Python -->
+  <text x="20" y="68" font-size="13" font-weight="bold" fill="#6B7280">YOUR CODE (the model never sees this)</text>
+  <rect x="20" y="78" width="390" height="110" rx="10" fill="#F9FAFB" stroke="#6B7280" stroke-width="2"/>
+  <g font-size="13" font-family="Menlo, Consolas, monospace" fill="#111827">
+    <text x="34" y="108">def <tspan fill="#FF3621" font-weight="bold">multiply</tspan>(<tspan fill="#3B82F6" font-weight="bold">a: float, b: float</tspan>):</text>
+    <text x="34" y="136" fill="#047857">    """Multiply two numbers."""</text>
+    <text x="34" y="164">    return a * b</text>
+  </g>
+
+  <!-- Right: schema -->
+  <text x="460" y="68" font-size="13" font-weight="bold" fill="#6B7280">THE TOOL MENU (all the model sees)</text>
+  <rect x="460" y="78" width="460" height="236" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2"/>
+  <g font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">
+    <text x="474" y="104">{"type": "function",</text>
+    <text x="474" y="124"> "function": {</text>
+    <text x="474" y="144">   "name": <tspan fill="#FF3621" font-weight="bold">"multiply"</tspan>,</text>
+    <text x="474" y="164">   "description":</text>
+    <text x="474" y="184" fill="#047857" font-weight="bold">     "Multiply two numbers exactly.",</text>
+    <text x="474" y="204">   "parameters": {"type": "object",</text>
+    <text x="474" y="224" fill="#3B82F6" font-weight="bold">     "properties": {</text>
+    <text x="474" y="244" fill="#3B82F6" font-weight="bold">       "a": {"type": "number"},</text>
+    <text x="474" y="264" fill="#3B82F6" font-weight="bold">       "b": {"type": "number"}},</text>
+    <text x="474" y="284">     "required": ["a", "b"]}}}</text>
+  </g>
+
+  <!-- Legend -->
+  <g font-size="13" fill="#374151">
+    <rect x="20" y="214" width="14" height="14" rx="3" fill="#FF3621"/><text x="42" y="226"><tspan font-weight="bold">name</tspan> - what the model calls it</text>
+    <rect x="20" y="242" width="14" height="14" rx="3" fill="#047857"/><text x="42" y="254"><tspan font-weight="bold">description</tspan> - WHEN to use it</text>
+    <rect x="20" y="270" width="14" height="14" rx="3" fill="#3B82F6"/><text x="42" y="282"><tspan font-weight="bold">parameters</tspan> - a JSON schema (Video 05)</text>
+  </g>
+
+  <text x="470" y="350" text-anchor="middle" font-size="15" fill="#374151">The model chooses a tool using only the name, description and parameters.</text>
+  <text x="470" y="374" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Write them for a reader who can't see your code.</text>
+</svg>

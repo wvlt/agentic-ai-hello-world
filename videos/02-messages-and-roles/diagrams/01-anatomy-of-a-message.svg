@@ -11,13 +11,13 @@
     <text x="30" y="74" font-size="15" fill="#111827">messages = [</text>
 
     <rect x="50" y="86" width="510" height="52" rx="10" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="3"/>
-    <text x="66" y="117" font-size="13" fill="#111827">{"role": "system",    "content": "You are a friendly tutor."},</text>
+    <text x="62" y="117" font-size="12" fill="#111827">{"role": "system",    "content": "You are a friendly tutor."},</text>
 
     <rect x="50" y="150" width="510" height="52" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/>
-    <text x="66" y="181" font-size="13" fill="#111827">{"role": "user",      "content": "What is a Python list?"},</text>
+    <text x="62" y="181" font-size="12" fill="#111827">{"role": "user",      "content": "What is a Python list?"},</text>
 
     <rect x="50" y="214" width="510" height="52" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="3" stroke-dasharray="6 4"/>
-    <text x="66" y="245" font-size="13" fill="#6B7280">{"role": "assistant", "content": "..."}   (optional)</text>
+    <text x="62" y="245" font-size="12" fill="#6B7280">{"role": "assistant", "content": "..."}   (optional)</text>
 
     <text x="30" y="292" font-size="15" fill="#111827">]</text>
   </g>

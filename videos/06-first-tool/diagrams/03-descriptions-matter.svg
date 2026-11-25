@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="380" viewBox="0 0 940 380" font-family="Helvetica, Arial, sans-serif">
+  <rect width="940" height="380" fill="#FFFFFF"/>
+  <text x="470" y="32" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Tool descriptions are the model's only clue</text>
+  <text x="470" y="58" text-anchor="middle" font-size="14" fill="#374151">Question: "What is 48729 * 3817?"</text>
+
+  <!-- Vague -->
+  <rect x="20" y="76" width="440" height="230" rx="14" fill="#FEF2F2" stroke="#EF4444" stroke-width="3"/>
+  <text x="240" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Vague</text>
+  <g font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">
+    <text x="40" y="136">tool_a: "Does stuff with two numbers."</text>
+    <text x="40" y="156">tool_b: "Does stuff with two numbers."</text>
+  </g>
+  <text x="40" y="180" font-size="12" fill="#6B7280">(secretly: tool_a adds, tool_b multiplies)</text>
+  <line x1="40" y1="196" x2="440" y2="196" stroke="#FECACA" stroke-width="2"/>
+  <text x="40" y="222" font-size="14" font-weight="bold" fill="#111827">Our test: both models picked tool_a</text>
+  <text x="40" y="242" font-size="14" font-weight="bold" fill="#111827">4 times out of 4</text>
+  <text x="40" y="270" font-size="13" fill="#B91C1C">tool_a returned 52546 (it added). The model</text>
+  <text x="40" y="288" font-size="13" fill="#B91C1C">then guessed the product itself - still wrong.</text>
+
+  <!-- Clear -->
+  <rect x="480" y="76" width="440" height="230" rx="14" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <text x="700" y="106" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Clear</text>
+  <g font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">
+    <text x="500" y="136">multiply: "Multiply two numbers</text>
+    <text x="500" y="156">           exactly. Use this for any</text>
+    <text x="500" y="176">           multiplication."</text>
+  </g>
+  <line x1="500" y1="196" x2="900" y2="196" stroke="#A7F3D0" stroke-width="2"/>
+  <text x="500" y="222" font-size="14" font-weight="bold" fill="#111827">Our test: both models called multiply</text>
+  <text x="500" y="242" font-size="14" font-weight="bold" fill="#111827">3 times out of 3</text>
+  <text x="500" y="270" font-size="14" fill="#047857">-> 185,998,593. Correct, every time.</text>
+
+  <text x="470" y="340" text-anchor="middle" font-size="15" fill="#374151">Good names and descriptions matter more than clever prompts.</text>
+  <text x="470" y="364" text-anchor="middle" font-size="12" fill="#9CA3AF">Models tested: Llama 3.3 70B and Claude Haiku 4.5.</text>
+</svg>

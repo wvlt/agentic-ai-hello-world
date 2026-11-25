@@ -10,7 +10,7 @@
 
   <!-- Left -->
   <rect x="35" y="104" width="360" height="44" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
-  <text x="50" y="131" font-size="12" fill="#111827">user: Turn this into a ticket: export button broken...</text>
+  <text x="50" y="131" font-size="12" fill="#111827">user: Turn this into a ticket: export...</text>
   <rect x="35" y="160" width="360" height="130" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/>
   <g font-size="12" fill="#374151">
     <text x="50" y="184">assistant: Here is a ticket based on the issue</text>

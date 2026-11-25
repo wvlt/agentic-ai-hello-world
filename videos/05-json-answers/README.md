@@ -44,4 +44,4 @@ Tool calling (Video 06) - although you'll see it's just structured output where 
 * With a **JSON schema**, Llama 3.3, Llama 3.1 8B and Claude Haiku all returned clean, parseable JSON.
 
 ## Next
-Video 06 - Giving the model hands: your first tool (coming soon)
+[Video 06 - Giving the model hands: your first tool](../06-first-tool/README.md)
