@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="370" viewBox="0 0 940 370" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="940" height="370" fill="#FFFFFF"/>
+  <text x="470" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Three ways to get JSON</text>
+
+  <!-- 1 Ask nicely -->
+  <rect x="30" y="60" width="280" height="240" rx="14" fill="#FEF2F2" stroke="#EF4444" stroke-width="3"/>
+  <text x="170" y="92" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">1. Ask nicely</text>
+  <text x="170" y="120" text-anchor="middle" font-size="13" fill="#374151">Prompt: "Reply ONLY with JSON"</text>
+  <line x1="50" y1="136" x2="290" y2="136" stroke="#FECACA" stroke-width="2"/>
+  <text x="50" y="162" font-size="13" font-weight="bold" fill="#374151">Our test, json.loads():</text>
+  <text x="50" y="184" font-size="13" fill="#374151">Llama 3.3: 3 of 3 parsed</text>
+  <text x="50" y="204" font-size="13" fill="#374151">Claude Haiku: 0 of 3 parsed</text>
+  <text x="50" y="224" font-size="12" fill="#6B7280">(it wrapped JSON in code fences)</text>
+  <rect x="110" y="252" width="120" height="28" rx="14" fill="#EF4444"/>
+  <text x="170" y="271" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">FRAGILE</text>
+
+  <!-- 2 Ask + clean up -->
+  <rect x="330" y="60" width="280" height="240" rx="14" fill="#FFFBEB" stroke="#F59E0B" stroke-width="3"/>
+  <text x="470" y="92" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">2. Ask + clean up</text>
+  <text x="470" y="120" text-anchor="middle" font-size="13" fill="#374151">Strip code fences, then parse</text>
+  <line x1="350" y1="136" x2="590" y2="136" stroke="#FDE68A" stroke-width="2"/>
+  <text x="350" y="162" font-size="13" fill="#374151">Fixes the code-fence problem</text>
+  <text x="350" y="184" font-size="13" fill="#374151">Still breaks if the model adds</text>
+  <text x="350" y="204" font-size="13" fill="#374151">extra words or a wrong field</text>
+  <rect x="410" y="252" width="120" height="28" rx="14" fill="#F59E0B"/>
+  <text x="470" y="271" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">BETTER</text>
+
+  <!-- 3 JSON schema -->
+  <rect x="630" y="60" width="280" height="240" rx="14" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <text x="770" y="92" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">3. JSON schema</text>
+  <text x="770" y="120" text-anchor="middle" font-size="13" font-family="Menlo, Consolas, monospace" fill="#374151">response_format=...</text>
+  <line x1="650" y1="136" x2="890" y2="136" stroke="#A7F3D0" stroke-width="2"/>
+  <text x="650" y="162" font-size="13" fill="#374151">The model is constrained to</text>
+  <text x="650" y="182" font-size="13" fill="#374151">your fields and types</text>
+  <text x="650" y="208" font-size="13" font-weight="bold" fill="#374151">Our test: 3 of 3 models</text>
+  <text x="650" y="228" font-size="13" font-weight="bold" fill="#374151">returned clean JSON</text>
+  <rect x="700" y="252" width="140" height="28" rx="14" fill="#10B981"/>
+  <text x="770" y="271" text-anchor="middle" font-size="13" font-weight="bold" fill="#FFFFFF">RECOMMENDED</text>
+
+  <line x1="100" y1="330" x2="840" y2="330" stroke="#374151" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="470" y="356" text-anchor="middle" font-size="14" fill="#374151">more reliable</text>
+</svg>

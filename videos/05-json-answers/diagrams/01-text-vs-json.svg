@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="920" height="360" fill="#FFFFFF"/>
+  <text x="460" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">People read text. Code reads JSON.</text>
+
+  <!-- Row 1: free text -->
+  <text x="30" y="70" font-size="13" font-weight="bold" fill="#6B7280">FREE-TEXT REPLY</text>
+  <rect x="30" y="80" width="440" height="90" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/>
+  <g font-size="13" fill="#111827">
+    <text x="46" y="108">"The review is clearly negative - the</text>
+    <text x="46" y="128">customer seems very frustrated. I'd say</text>
+    <text x="46" y="148">I'm about 90% sure."</text>
+  </g>
+  <rect x="525" y="80" width="365" height="90" rx="10" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+  <text x="545" y="115" font-size="15" font-family="Menlo, Consolas, monospace" fill="#111827">if ??? :</text>
+  <text x="545" y="145" font-size="13" font-weight="bold" fill="#B91C1C">Your code can't read this reliably</text>
+
+  <!-- Row 2: JSON -->
+  <text x="30" y="200" font-size="13" font-weight="bold" fill="#6B7280">JSON REPLY</text>
+  <rect x="30" y="210" width="440" height="90" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="46" y="250" font-size="14" font-family="Menlo, Consolas, monospace" fill="#111827">{"sentiment": "negative",</text>
+  <text x="46" y="272" font-size="14" font-family="Menlo, Consolas, monospace" fill="#111827"> "confidence": 0.9}</text>
+  <rect x="525" y="210" width="365" height="90" rx="10" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="545" y="245" font-size="13" font-family="Menlo, Consolas, monospace" fill="#111827">if r["sentiment"] == "negative":</text>
+  <text x="545" y="275" font-size="13" font-weight="bold" fill="#047857">Your code can use this directly</text>
+
+  <g stroke="#374151" stroke-width="2.5">
+    <line x1="474" y1="125" x2="520" y2="125" marker-end="url(#arrow)"/>
+    <line x1="474" y1="255" x2="520" y2="255" marker-end="url(#arrow)"/>
+  </g>
+
+  <text x="460" y="338" text-anchor="middle" font-size="15" fill="#374151">Agents are code. Before a model can drive tools, it must answer in a shape code can parse.</text>
+</svg>

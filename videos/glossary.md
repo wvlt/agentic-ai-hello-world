@@ -34,6 +34,12 @@ Every term used in the series, in plain English, and the video that introduces i
 | **Trimming** | Sending only the last N messages to save tokens. Can silently drop important facts. | 04 |
 | **Pinning** | Keeping key facts in the system prompt so they survive trimming. | 04 |
 | **Context engineering** | Deciding what goes into the message list (and what stays out) so the model has what it needs. | 04, 07 |
+| **JSON** | A text format of keys and values, like a Python dict. `json.loads` turns it into a `dict`. | 05 |
+| **Structured output** | A model answer in a fixed, machine-readable shape (usually JSON) instead of free text. | 05 |
+| **JSON schema** | A description of the exact fields, types and allowed values an answer must have. | 05 |
+| **response_format** | The API parameter that passes a JSON schema to the model, constraining its answer. | 05 |
+| **Code fence** | Markdown's ```` ``` ```` wrapper around code. Some models add it around JSON, which breaks `json.loads`. | 05 |
+| **enum** | A schema rule that a value must be one of a fixed list, e.g. positive / negative / neutral. | 05 |
 
 ## Coming in later videos
-`structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
+`tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)

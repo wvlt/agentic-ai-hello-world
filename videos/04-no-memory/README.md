@@ -42,4 +42,4 @@ Long-term memory stores and databases (Part 2). Summarising old history with the
 * **What could go wrong?** Trimming old messages saves tokens but can silently drop facts. Keeping only the last 4 messages, the model answered "I don't have that information" when asked the user's name. **Pinning** the key facts in the system prompt fixed it while staying cheap (130 vs 208 input tokens).
 
 ## Next
-Video 05 - Answers code can use: structured JSON output (coming soon)
+[Video 05 - Answers code can use: structured JSON output](../05-json-answers/README.md)
