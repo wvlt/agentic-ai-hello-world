@@ -39,4 +39,4 @@ Message roles (Video 02), `choices` / `finish_reason` / temperature (Video 03), 
 * **What could go wrong?** The model can be **confidently wrong**. Ask it to multiply 48729 by 3817 and compare with Python - in our tests both Llama and Claude got it wrong every time, with a different answer each run. Agents fix this with tools (Videos 06-08).
 
 ## Next
-[Video 02 - Talking to the model: messages and roles](../course-map.md) (coming soon)
+[Video 02 - Talking to the model: messages and roles](../02-messages-and-roles/README.md)

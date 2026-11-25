@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="920" height="360" fill="#FFFFFF"/>
+  <text x="460" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">A conversation is a list of messages</text>
+
+  <g font-family="Menlo, Consolas, monospace">
+    <text x="30" y="74" font-size="15" fill="#111827">messages = [</text>
+
+    <rect x="50" y="86" width="510" height="52" rx="10" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="3"/>
+    <text x="66" y="117" font-size="13" fill="#111827">{"role": "system",    "content": "You are a friendly tutor."},</text>
+
+    <rect x="50" y="150" width="510" height="52" rx="10" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/>
+    <text x="66" y="181" font-size="13" fill="#111827">{"role": "user",      "content": "What is a Python list?"},</text>
+
+    <rect x="50" y="214" width="510" height="52" rx="10" fill="#FFF1EE" stroke="#FF3621" stroke-width="3" stroke-dasharray="6 4"/>
+    <text x="66" y="245" font-size="13" fill="#6B7280">{"role": "assistant", "content": "..."}   (optional)</text>
+
+    <text x="30" y="292" font-size="15" fill="#111827">]</text>
+  </g>
+
+  <!-- LLM and reply -->
+  <rect x="620" y="146" width="110" height="60" rx="12" fill="#FFF1EE" stroke="#FF3621" stroke-width="3"/>
+  <text x="675" y="182" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">LLM</text>
+  <rect x="770" y="140" width="130" height="72" rx="10" fill="#F3F4F6" stroke="#FF3621" stroke-width="2"/>
+  <text x="835" y="168" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">reply =</text>
+  <text x="835" y="186" text-anchor="middle" font-size="12" fill="#374151">a new "assistant"</text>
+  <text x="835" y="202" text-anchor="middle" font-size="12" fill="#374151">message</text>
+  <g stroke="#374151" stroke-width="2.5">
+    <line x1="572" y1="176" x2="616" y2="176" marker-end="url(#arrow)"/>
+    <line x1="732" y1="176" x2="766" y2="176" marker-end="url(#arrow)"/>
+  </g>
+
+  <text x="460" y="324" text-anchor="middle" font-size="14" fill="#374151">Each message is a dict with a role (who is speaking) and content (what they said).</text>
+  <text x="460" y="346" text-anchor="middle" font-size="14" fill="#6B7280">Order matters: top = first, bottom = most recent.</text>
+</svg>

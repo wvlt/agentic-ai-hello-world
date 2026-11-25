@@ -16,6 +16,12 @@ Every term used in the series, in plain English, and the video that introduces i
 | **AI agent** | An LLM in a loop that can decide on actions, use tools, see the results and keep going until a goal is reached. | 01 |
 | **Tool** | A normal function (e.g. look up an order, run a query) the agent may ask your code to run. | 01 (concept), 06 |
 | **Agent loop** | The repeat cycle: think, act, observe, until done. | 01 (concept), 08 |
+| **Message** | A Python dict with a `role` and `content`. A conversation is a list of messages, oldest first. | 02 |
+| **Role** | Who is speaking in a message: `system`, `user`, `assistant` (and `tool`, Video 06). | 02 |
+| **System prompt** | The `system` message written by the developer: rules, personality, goals. Sent with every call. | 02 |
+| **developer role** | Newer OpenAI name for the `system` role. Databricks endpoints accept both. | 02 |
+| **Few-shot prompting** | Teaching a format by including example `user`/`assistant` pairs that you write yourself. | 02 |
+| **Prompt injection** | A user (or text) trying to override your instructions, e.g. "ignore all previous instructions". | 02, 09 |
 
 ## Coming in later videos
-`message`, `role`, `system prompt` (02) | `choices`, `finish_reason`, `temperature` (03) | `context window`, `memory` (04) | `structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
+`choices`, `finish_reason`, `temperature` (03) | `context window`, `memory` (04) | `structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)

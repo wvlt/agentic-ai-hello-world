@@ -54,5 +54,6 @@ Every video folder has the same shape:
 
 | Video | Status |
 | --- | --- |
-| 01 What is an AI agent? + your first LLM call | Ready |
-| 02-13 | Planned (see [course-map.md](course-map.md)) |
+| 01 [What is an AI agent? + your first LLM call](01-what-is-an-agent/README.md) | Ready |
+| 02 [Talking to the model: messages and roles](02-messages-and-roles/README.md) | Ready |
+| 03-13 | Planned (see [course-map.md](course-map.md)) |
