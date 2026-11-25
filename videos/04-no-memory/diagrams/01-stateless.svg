@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="380" viewBox="0 0 940 380" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect width="940" height="380" fill="#FFFFFF"/>
+
+  <rect x="15" y="15" width="440" height="305" rx="16" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="485" y="15" width="440" height="305" rx="16" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="2"/>
+  <text x="235" y="50" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Two separate calls</text>
+  <text x="705" y="50" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">One call with the history</text>
+
+  <!-- Left: call 1 -->
+  <text x="30" y="86" font-size="12" font-weight="bold" fill="#6B7280">CALL 1</text>
+  <rect x="30" y="95" width="170" height="36" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="115" y="118" text-anchor="middle" font-size="12" fill="#111827">"Hi, my name is Sam."</text>
+  <rect x="222" y="95" width="60" height="36" rx="8" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/>
+  <text x="252" y="118" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">LLM</text>
+  <rect x="304" y="95" width="136" height="36" rx="8" fill="#F3F4F6" stroke="#6B7280" stroke-width="2"/>
+  <text x="372" y="118" text-anchor="middle" font-size="12" fill="#111827">"Hi Sam!"</text>
+
+  <line x1="30" y1="165" x2="440" y2="165" stroke="#EF4444" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="150" y="154" width="170" height="22" rx="11" fill="#FFFFFF" stroke="#EF4444" stroke-width="1.5"/>
+  <text x="235" y="169" text-anchor="middle" font-size="12" font-weight="bold" fill="#EF4444">nothing carries over</text>
+
+  <!-- Left: call 2 -->
+  <text x="30" y="200" font-size="12" font-weight="bold" fill="#6B7280">CALL 2</text>
+  <rect x="30" y="209" width="170" height="36" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="115" y="232" text-anchor="middle" font-size="12" fill="#111827">"What is my name?"</text>
+  <rect x="222" y="209" width="60" height="36" rx="8" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/>
+  <text x="252" y="232" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">LLM</text>
+  <rect x="304" y="209" width="136" height="36" rx="8" fill="#FEF2F2" stroke="#EF4444" stroke-width="2"/>
+  <text x="372" y="232" text-anchor="middle" font-size="12" fill="#111827">"I don't know."</text>
+
+  <g stroke="#374151" stroke-width="2">
+    <line x1="200" y1="113" x2="219" y2="113" marker-end="url(#arrow)"/>
+    <line x1="282" y1="113" x2="301" y2="113" marker-end="url(#arrow)"/>
+    <line x1="200" y1="227" x2="219" y2="227" marker-end="url(#arrow)"/>
+    <line x1="282" y1="227" x2="301" y2="227" marker-end="url(#arrow)"/>
+  </g>
+  <text x="235" y="290" text-anchor="middle" font-size="14" fill="#374151">Each call starts from zero.</text>
+
+  <!-- Right: one call with history -->
+  <text x="505" y="86" font-size="12" font-weight="bold" fill="#6B7280">CALL 2 SENDS THE WHOLE LIST</text>
+  <rect x="505" y="95" width="240" height="36" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="517" y="118" font-size="12" fill="#111827">user: "Hi, my name is Sam."</text>
+  <rect x="505" y="139" width="240" height="36" rx="8" fill="#FFF1EE" stroke="#FF3621" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="517" y="162" font-size="12" fill="#111827">assistant: "Hi Sam!"</text>
+  <rect x="505" y="183" width="240" height="36" rx="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="517" y="206" font-size="12" fill="#111827">user: "What is my name?"</text>
+
+  <rect x="790" y="139" width="60" height="36" rx="8" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/>
+  <text x="820" y="162" text-anchor="middle" font-size="13" font-weight="bold" fill="#111827">LLM</text>
+  <rect x="760" y="232" width="150" height="36" rx="8" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+  <text x="835" y="255" text-anchor="middle" font-size="12" fill="#111827">"Your name is Sam."</text>
+  <g stroke="#374151" stroke-width="2" fill="none">
+    <path d="M750 100 Q760 157 750 214"/>
+    <line x1="758" y1="157" x2="787" y2="157" marker-end="url(#arrow)"/>
+    <line x1="820" y1="175" x2="830" y2="229" marker-end="url(#arrow)"/>
+  </g>
+  <text x="705" y="300" text-anchor="middle" font-size="14" fill="#374151">You resend the history every time.</text>
+
+  <text x="470" y="356" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">The model has no memory. Memory = the list YOU send.</text>
+</svg>

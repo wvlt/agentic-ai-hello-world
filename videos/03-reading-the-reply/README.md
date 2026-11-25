@@ -40,4 +40,4 @@ Tool calls in practice (Video 06). Multi-turn memory (Video 04). Structured JSON
 * **What could go wrong?** A reply cut off by `max_tokens` looks normal if you only read `.content`. In our test, "List 10 tips" with `max_tokens=40` stopped halfway through tip 2 with `finish_reason == "length"`. Code that ignores `finish_reason` ships half answers - and agents that ignore it make decisions on half answers (Video 08).
 
 ## Next
-Video 04 - LLMs have no memory (coming soon)
+[Video 04 - LLMs have no memory](../04-no-memory/README.md)

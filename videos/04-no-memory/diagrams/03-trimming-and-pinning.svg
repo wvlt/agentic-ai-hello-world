@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="420" viewBox="0 0 940 420" font-family="Helvetica, Arial, sans-serif">
+  <rect width="940" height="420" fill="#FFFFFF"/>
+  <text x="470" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Trimming saves tokens - but can forget. Pin what matters.</text>
+
+  <!-- Row 1: full history -->
+  <text x="40" y="70" font-size="14" font-weight="bold" fill="#111827">1. Full history: remembers everything, grows forever</text>
+  <g font-size="11" font-weight="bold" text-anchor="middle" fill="#111827">
+    <rect x="40" y="80" width="66" height="30" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/><text x="73" y="99">system</text>
+    <rect x="110" y="80" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/><text x="143" y="99">U1</text>
+    <rect x="180" y="80" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="213" y="99">A1</text>
+    <rect x="250" y="80" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="283" y="99">U2</text>
+    <rect x="320" y="80" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="353" y="99">A2</text>
+    <rect x="390" y="80" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="423" y="99">U3</text>
+    <rect x="460" y="80" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="493" y="99">A3</text>
+    <rect x="530" y="80" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="563" y="99">U4</text>
+    <rect x="600" y="80" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="633" y="99">A4</text>
+    <rect x="670" y="80" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="703" y="99">U5</text>
+    <rect x="740" y="80" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="773" y="99">A5</text>
+    <rect x="810" y="80" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="843" y="99">U6</text>
+  </g>
+  <text x="143" y="126" text-anchor="middle" font-size="11" fill="#3B82F6">"I'm Sam, from Perth"</text>
+  <text x="843" y="126" text-anchor="middle" font-size="11" fill="#3B82F6">"What's my name?"</text>
+  <text x="40" y="148" font-size="13" fill="#047857">Answer: "You're Sam, from Perth." - 208 input tokens</text>
+
+  <!-- Row 2: trimmed -->
+  <text x="40" y="190" font-size="14" font-weight="bold" fill="#111827">2. Trimmed to the last 4 messages: cheaper, but the name fell out</text>
+  <g font-size="11" font-weight="bold" text-anchor="middle" fill="#111827">
+    <rect x="40" y="200" width="66" height="30" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/><text x="73" y="219">system</text>
+    <g opacity="0.25">
+      <rect x="110" y="200" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="143" y="219">U1</text>
+      <rect x="180" y="200" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="213" y="219">A1</text>
+      <rect x="250" y="200" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="283" y="219">U2</text>
+      <rect x="320" y="200" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="353" y="219">A2</text>
+      <rect x="390" y="200" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="423" y="219">U3</text>
+      <rect x="460" y="200" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="493" y="219">A3</text>
+      <rect x="530" y="200" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="563" y="219">U4</text>
+    </g>
+    <rect x="600" y="200" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="633" y="219">A4</text>
+    <rect x="670" y="200" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="703" y="219">U5</text>
+    <rect x="740" y="200" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="773" y="219">A5</text>
+    <rect x="810" y="200" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="843" y="219">U6</text>
+  </g>
+  <line x1="110" y1="215" x2="596" y2="215" stroke="#EF4444" stroke-width="2"/>
+  <text x="353" y="246" text-anchor="middle" font-size="11" font-weight="bold" fill="#EF4444">dropped - including "I'm Sam, from Perth"</text>
+  <text x="40" y="268" font-size="13" fill="#B91C1C">Answer: "I don't have that information." - 106 input tokens</text>
+
+  <!-- Row 3: trimmed + pinned -->
+  <text x="40" y="310" font-size="14" font-weight="bold" fill="#111827">3. Trimmed + key facts pinned in the system prompt: cheap AND remembers</text>
+  <g font-size="11" font-weight="bold" text-anchor="middle" fill="#111827">
+    <rect x="40" y="320" width="136" height="30" rx="6" fill="#D1FAE5" stroke="#10B981" stroke-width="3"/><text x="108" y="339">system + facts</text>
+    <g opacity="0.25">
+      <rect x="180" y="320" width="416" height="30" rx="6" fill="#F3F4F6" stroke="#9CA3AF" stroke-width="2"/><text x="388" y="339">older messages dropped</text>
+    </g>
+    <rect x="600" y="320" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="633" y="339">A4</text>
+    <rect x="670" y="320" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="703" y="339">U5</text>
+    <rect x="740" y="320" width="66" height="30" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="773" y="339">A5</text>
+    <rect x="810" y="320" width="66" height="30" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="843" y="339">U6</text>
+  </g>
+  <text x="108" y="366" text-anchor="middle" font-size="11" fill="#047857">"Facts: name Sam, lives in Perth"</text>
+  <text x="40" y="390" font-size="13" fill="#047857">Answer: "You're Sam, from Perth." - 130 input tokens</text>
+
+  <text x="900" y="410" text-anchor="end" font-size="11" fill="#9CA3AF">U = user message, A = assistant message. Token counts from our test (Llama 3.3).</text>
+</svg>

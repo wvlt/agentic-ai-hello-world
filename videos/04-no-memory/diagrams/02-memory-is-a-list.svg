@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="400" viewBox="0 0 900 400" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="400" fill="#FFFFFF"/>
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Memory is a list that grows every turn</text>
+
+  <g font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">
+    <!-- Turn 1 -->
+    <text x="150" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold">Turn 1 sends</text>
+    <rect x="60" y="90" width="180" height="24" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/><text x="70" y="107">system</text>
+    <rect x="60" y="118" width="180" height="24" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="70" y="135">user: my name is Sam</text>
+
+    <!-- Turn 2 -->
+    <text x="450" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold">Turn 2 sends</text>
+    <rect x="360" y="90" width="180" height="24" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/><text x="370" y="107">system</text>
+    <rect x="360" y="118" width="180" height="24" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="370" y="135">user: my name is Sam</text>
+    <rect x="360" y="146" width="180" height="24" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="370" y="163">assistant: Hi Sam!</text>
+    <rect x="360" y="174" width="180" height="24" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="370" y="191">user: weekend idea?</text>
+
+    <!-- Turn 3 -->
+    <text x="750" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="bold">Turn 3 sends</text>
+    <rect x="660" y="90" width="180" height="24" rx="6" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="2"/><text x="670" y="107">system</text>
+    <rect x="660" y="118" width="180" height="24" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="670" y="135">user: my name is Sam</text>
+    <rect x="660" y="146" width="180" height="24" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="670" y="163">assistant: Hi Sam!</text>
+    <rect x="660" y="174" width="180" height="24" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="670" y="191">user: weekend idea?</text>
+    <rect x="660" y="202" width="180" height="24" rx="6" fill="#FFF1EE" stroke="#FF3621" stroke-width="2"/><text x="670" y="219">assistant: Kings Park</text>
+    <rect x="660" y="230" width="180" height="24" rx="6" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/><text x="670" y="247">user: what to pack?</text>
+  </g>
+
+  <!-- Token counts from our test -->
+  <g font-size="14" text-anchor="middle" fill="#374151">
+    <text x="150" y="290"><tspan font-weight="bold" fill="#111827">2 messages</tspan></text>
+    <text x="150" y="310">62 input tokens</text>
+    <text x="450" y="290"><tspan font-weight="bold" fill="#111827">4 messages</tspan></text>
+    <text x="450" y="310">93 input tokens</text>
+    <text x="750" y="290"><tspan font-weight="bold" fill="#111827">6 messages</tspan></text>
+    <text x="750" y="310">120 input tokens</text>
+  </g>
+  <text x="450" y="346" text-anchor="middle" font-size="13" fill="#6B7280">Our test (Llama 3.3, short answers): by turn 6 each call sent 208 input tokens - 3.4x turn 1.</text>
+  <text x="450" y="376" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Every call resends the whole history: memory makes every call bigger and pricier.</text>
+</svg>

@@ -28,6 +28,12 @@ Every term used in the series, in plain English, and the video that introduces i
 | **usage** | Token counts for a call: `prompt_tokens` (input), `completion_tokens` (output), `total_tokens`. | 03 |
 | **max_tokens** | A cap on output tokens. Limits answer length and cost; too low cuts answers off. | 03 |
 | **Temperature** | How much randomness in word choice. Low (0) = predictable, high (1.5) = varied. | 03 |
+| **Stateless** | Keeping nothing between calls. LLMs are stateless: each call starts from zero. | 04 |
+| **Memory (short-term)** | The message list your code keeps and resends every call. The model only "remembers" what is in it. | 04 |
+| **Context window** | The maximum number of tokens a model accepts in one call. Exceed it and the call fails. | 04 |
+| **Trimming** | Sending only the last N messages to save tokens. Can silently drop important facts. | 04 |
+| **Pinning** | Keeping key facts in the system prompt so they survive trimming. | 04 |
+| **Context engineering** | Deciding what goes into the message list (and what stays out) so the model has what it needs. | 04, 07 |
 
 ## Coming in later videos
-`context window`, `memory` (04) | `structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
+`structured output`, `JSON schema` (05) | `tool call`, `tool_call_id` (06-07) | `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
