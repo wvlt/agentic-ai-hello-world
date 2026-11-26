@@ -48,4 +48,4 @@ The golden rules of tool messages and what breaks when you get them wrong (Video
 * Asked about **two cities at once**, Claude Haiku requested both weather lookups in one reply. Llama 3.3 asked for **one city per round** (Perth, then Tokyo) 3 times out of 3 - so code that does exactly one round gets no final answer from Llama. Handling "keep going until there are no more tool calls" is the agent loop (Video 08).
 
 ## Next
-Video 07 - The golden rules of tools (coming soon)
+[Video 07 - The golden rules of tools](../07-tool-rules/README.md)

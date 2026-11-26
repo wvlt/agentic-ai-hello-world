@@ -62,4 +62,5 @@ Every video folder has the same shape:
 | 04 [LLMs have no memory](04-no-memory/README.md) | Ready |
 | 05 [Answers code can use: structured JSON output](05-json-answers/README.md) | Ready |
 | 06 [Giving the model hands: your first tool](06-first-tool/README.md) | Ready |
-| 07-13 | Planned (see [course-map.md](course-map.md)) |
+| 07 [The golden rules of tools](07-tool-rules/README.md) | Ready |
+| 08-13 | Planned (see [course-map.md](course-map.md)) |

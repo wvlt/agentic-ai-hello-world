@@ -45,6 +45,10 @@ Every term used in the series, in plain English, and the video that introduces i
 | **tool role** | The message role your code uses to send a tool's result back to the model. | 06 |
 | **tool_call_id** | The id of a tool call. Your `tool` message must carry the same id so the model knows which request it answers. | 06, 07 |
 | **Tool round** | One cycle of: model asks for a tool, your code runs it, you send the result, the model answers. Costs two model calls. | 06 |
+| **Golden rules (tool messages)** | 1. request before result, 2. match the `tool_call_id`, 3. results are strings, 4. answer every call. | 07 |
+| **Strict vs lenient model** | A strict model rejects broken tool messages with an error; a lenient one silently accepts them, hiding bugs. | 07 |
+| **Parallel tool calls** | Several tool calls in one model reply. Claude does this; the Databricks Llama 3.3 endpoint returns one per reply. | 06, 07 |
+| **Narrow tool** | A tool that does the work in code and returns a small, exact result, instead of dumping raw data. | 07 |
 
 ## Coming in later videos
 `termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)

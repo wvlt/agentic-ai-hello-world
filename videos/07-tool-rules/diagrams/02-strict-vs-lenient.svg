@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="380" viewBox="0 0 900 380" font-family="Helvetica, Arial, sans-serif">
+  <rect width="900" height="380" fill="#FFFFFF"/>
+  <text x="450" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Break a rule on purpose: what happens?</text>
+
+  <!-- Header -->
+  <g font-size="14" font-weight="bold" fill="#111827">
+    <text x="40" y="80">What we sent</text>
+    <text x="550" y="80" text-anchor="middle">Llama 3.3 70B</text>
+    <text x="770" y="80" text-anchor="middle">Claude Haiku 4.5</text>
+  </g>
+  <line x1="30" y1="92" x2="870" y2="92" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Rows -->
+  <g font-size="13" fill="#111827">
+    <text x="40" y="125">All four rules followed</text>
+    <text x="40" y="167">Rule 1 broken: no assistant request</text>
+    <text x="40" y="209">Rule 2 broken: wrong tool_call_id</text>
+    <text x="40" y="251">Rule 3 broken: dict as content</text>
+    <text x="40" y="293">Rule 4 broken: answered 1 of 2 calls</text>
+  </g>
+
+  <g font-size="13" font-weight="bold" text-anchor="middle">
+    <!-- Llama column -->
+    <rect x="450" y="104" width="200" height="32" rx="6" fill="#D1FAE5"/><text x="550" y="125" fill="#047857">works</text>
+    <rect x="450" y="146" width="200" height="32" rx="6" fill="#FEF3C7"/><text x="550" y="167" fill="#B45309">accepted silently</text>
+    <rect x="450" y="188" width="200" height="32" rx="6" fill="#FEF3C7"/><text x="550" y="209" fill="#B45309">accepted silently</text>
+    <rect x="450" y="230" width="200" height="32" rx="6" fill="#FEE2E2"/><text x="550" y="251" fill="#B91C1C">ERROR 400</text>
+    <rect x="450" y="272" width="200" height="32" rx="6" fill="#F3F4F6"/><text x="550" y="293" fill="#6B7280">can't happen *</text>
+
+    <!-- Claude column -->
+    <rect x="670" y="104" width="200" height="32" rx="6" fill="#D1FAE5"/><text x="770" y="125" fill="#047857">works</text>
+    <rect x="670" y="146" width="200" height="32" rx="6" fill="#FEE2E2"/><text x="770" y="167" fill="#B91C1C">ERROR 400</text>
+    <rect x="670" y="188" width="200" height="32" rx="6" fill="#FEE2E2"/><text x="770" y="209" fill="#B91C1C">ERROR 400</text>
+    <rect x="670" y="230" width="200" height="32" rx="6" fill="#FEE2E2"/><text x="770" y="251" fill="#B91C1C">ERROR 400</text>
+    <rect x="670" y="272" width="200" height="32" rx="6" fill="#FEE2E2"/><text x="770" y="293" fill="#B91C1C">ERROR 400</text>
+  </g>
+
+  <text x="40" y="326" font-size="11" fill="#6B7280">* The Llama endpoint accepts only one tool call per reply, so there is never a second call to forget.</text>
+  <text x="450" y="358" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Lenient is not safe: code that works on Llama can crash on Claude.</text>
+</svg>

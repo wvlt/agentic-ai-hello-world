@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="440" viewBox="0 0 940 440" font-family="Helvetica, Arial, sans-serif">
+  <rect width="940" height="440" fill="#FFFFFF"/>
+  <text x="470" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">The four golden rules of tool messages</text>
+
+  <!-- Rule 1 -->
+  <rect x="20" y="56" width="440" height="160" rx="14" fill="#EFF6FF" stroke="#3B82F6" stroke-width="3"/>
+  <circle cx="52" cy="88" r="18" fill="#3B82F6"/><text x="52" y="94" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="82" y="94" font-size="17" font-weight="bold" fill="#111827">Request before result</text>
+  <text x="40" y="128" font-size="13" fill="#374151">Add the assistant message with tool_calls</text>
+  <text x="40" y="146" font-size="13" fill="#374151">BEFORE the tool messages that answer it.</text>
+  <rect x="40" y="164" width="400" height="34" rx="6" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="52" y="186" font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">messages.append(msg.model_dump(exclude_none=True))</text>
+
+  <!-- Rule 2 -->
+  <rect x="480" y="56" width="440" height="160" rx="14" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="3"/>
+  <circle cx="512" cy="88" r="18" fill="#8B5CF6"/><text x="512" y="94" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="542" y="94" font-size="17" font-weight="bold" fill="#111827">Match the tool_call_id</text>
+  <text x="500" y="128" font-size="13" fill="#374151">Each tool message carries the id of the</text>
+  <text x="500" y="146" font-size="13" fill="#374151">exact call it answers.</text>
+  <rect x="500" y="164" width="400" height="34" rx="6" fill="#FFFFFF" stroke="#DDD6FE" stroke-width="1.5"/>
+  <text x="512" y="186" font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">{"role": "tool", "tool_call_id": call.id, ...}</text>
+
+  <!-- Rule 3 -->
+  <rect x="20" y="232" width="440" height="160" rx="14" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <circle cx="52" cy="264" r="18" fill="#10B981"/><text x="52" y="270" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="82" y="270" font-size="17" font-weight="bold" fill="#111827">Results are strings</text>
+  <text x="40" y="304" font-size="13" fill="#374151">Tool message content must be text. Turn</text>
+  <text x="40" y="322" font-size="13" fill="#374151">dicts and lists into JSON text first.</text>
+  <rect x="40" y="340" width="400" height="34" rx="6" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5"/>
+  <text x="52" y="362" font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">"content": json.dumps(result)</text>
+
+  <!-- Rule 4 -->
+  <rect x="480" y="232" width="440" height="160" rx="14" fill="#FFFBEB" stroke="#F59E0B" stroke-width="3"/>
+  <circle cx="512" cy="264" r="18" fill="#F59E0B"/><text x="512" y="270" text-anchor="middle" font-size="17" font-weight="bold" fill="#FFFFFF">4</text>
+  <text x="542" y="270" font-size="17" font-weight="bold" fill="#111827">Answer every call</text>
+  <text x="500" y="304" font-size="13" fill="#374151">One tool message for EVERY tool call in</text>
+  <text x="500" y="322" font-size="13" fill="#374151">the reply - not just the first one.</text>
+  <rect x="500" y="340" width="400" height="34" rx="6" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="512" y="362" font-size="12" font-family="Menlo, Consolas, monospace" fill="#111827">for call in msg.tool_calls: ...</text>
+
+  <text x="470" y="424" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Follow all four and the same code works on every model.</text>
+</svg>
