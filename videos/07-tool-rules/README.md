@@ -49,4 +49,4 @@ The agent loop (Video 08). Tool errors and retries (Video 09). Real data tools (
 * The Databricks Llama 3.3 endpoint returns **only one tool call per reply** (sending it a reply with two calls gives "Multiple tool calls are not supported"). That's why Llama asked for Perth, then Tokyo, in Video 06. Claude can ask for several at once.
 
 ## Next
-Video 08 - The agent loop (coming soon)
+[Video 08 - The agent loop](../08-agent-loop/README.md)

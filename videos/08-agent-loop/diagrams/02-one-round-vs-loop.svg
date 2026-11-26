@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" font-family="Helvetica, Arial, sans-serif">
+  <rect width="960" height="420" fill="#FFFFFF"/>
+  <text x="480" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">One round vs a loop</text>
+  <text x="480" y="58" text-anchor="middle" font-size="14" fill="#6B7280">Question: "What's the weather in Perth and in Tokyo?"</text>
+
+  <!-- Left: one round -->
+  <rect x="30" y="80" width="430" height="280" rx="14" fill="#FEF2F2" stroke="#F87171" stroke-width="3"/>
+  <text x="245" y="112" text-anchor="middle" font-size="17" font-weight="bold" fill="#111827">One hand-written round</text>
+
+  <g font-size="13" fill="#111827">
+    <text x="50" y="150">1. Model asks: get_weather("Perth")</text>
+    <text x="50" y="178">2. You run it, send result</text>
+    <text x="50" y="206">3. Call model again...</text>
+    <text x="50" y="246" font-weight="bold" fill="#B91C1C">Reply: another tool_call for Tokyo</text>
+    <text x="50" y="274" fill="#6B7280">No final answer yet.</text>
+    <text x="50" y="310" fill="#6B7280">Llama often does one city per reply.</text>
+    <text x="50" y="334" fill="#6B7280">Claude may batch both - until it doesn't.</text>
+  </g>
+
+  <!-- Right: loop -->
+  <rect x="500" y="80" width="430" height="280" rx="14" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <text x="715" y="112" text-anchor="middle" font-size="17" font-weight="bold" fill="#111827">The agent loop</text>
+
+  <g font-size="13" fill="#111827">
+    <text x="520" y="150">1. Model asks for a tool</text>
+    <text x="520" y="178">2. Run it, save result, ask again</text>
+    <text x="520" y="206">3. Repeat while tool_calls exist</text>
+    <text x="520" y="246" font-weight="bold" fill="#047857">Reply: final answer when done</text>
+    <text x="520" y="274" fill="#6B7280">Works whether the model batches</text>
+    <text x="520" y="298" fill="#6B7280">or asks one tool at a time.</text>
+    <text x="520" y="334" fill="#6B7280">Same code. Different models.</text>
+  </g>
+
+  <text x="480" y="398" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Don't assume one round. Keep going until the model is done.</text>
+</svg>

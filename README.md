@@ -40,5 +40,6 @@ A beginner video series - 13 short videos, one idea each - lives in [`videos/`](
 * Start here: [videos/README.md](videos/README.md)
 * The full plan and topic coverage: [videos/course-map.md](videos/course-map.md)
 * Video 01: [What is an AI agent? + your first LLM call](videos/01-what-is-an-agent/README.md)
+* Latest: [Video 08 - The agent loop](videos/08-agent-loop/README.md) (your first real agent)
 
 The Step 1-6 notebooks above remain as the compact reference version of the course.

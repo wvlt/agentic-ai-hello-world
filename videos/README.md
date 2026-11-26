@@ -63,4 +63,5 @@ Every video folder has the same shape:
 | 05 [Answers code can use: structured JSON output](05-json-answers/README.md) | Ready |
 | 06 [Giving the model hands: your first tool](06-first-tool/README.md) | Ready |
 | 07 [The golden rules of tools](07-tool-rules/README.md) | Ready |
-| 08-13 | Planned (see [course-map.md](course-map.md)) |
+| 08 [The agent loop](08-agent-loop/README.md) | Ready |
+| 09-13 | Planned (see [course-map.md](course-map.md)) |

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="400" viewBox="0 0 940 400" font-family="Helvetica, Arial, sans-serif">
+  <rect width="940" height="400" fill="#FFFFFF"/>
+  <text x="470" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Design choices in our loop</text>
+
+  <!-- Headers -->
+  <g font-size="14" font-weight="bold" fill="#111827">
+    <text x="40" y="80">Choice</text>
+    <text x="320" y="80">Tutorial style</text>
+    <text x="580" y="80">Our style</text>
+    <text x="800" y="80">Why</text>
+  </g>
+  <line x1="30" y1="92" x2="910" y2="92" stroke="#D1D5DB" stroke-width="2"/>
+
+  <!-- Row 1 -->
+  <rect x="30" y="110" width="880" height="70" rx="10" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="48" y="140" font-size="14" font-weight="bold" fill="#111827">Loop shape</text>
+  <text x="48" y="162" font-size="12" fill="#6B7280">how it stops</text>
+  <text x="320" y="150" font-size="13" fill="#111827">while True:</text>
+  <text x="580" y="150" font-size="13" font-weight="bold" fill="#111827">for step in range(max_steps)</text>
+  <text x="800" y="142" font-size="12" fill="#374151">Confused models</text>
+  <text x="800" y="160" font-size="12" fill="#374151">can loop forever</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="196" width="880" height="70" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="48" y="226" font-size="14" font-weight="bold" fill="#111827">Done check</text>
+  <text x="48" y="248" font-size="12" fill="#6B7280">when to return</text>
+  <text x="320" y="236" font-size="13" fill="#111827">finish_reason == "tool_calls"</text>
+  <text x="580" y="236" font-size="13" font-weight="bold" fill="#111827">if not msg.tool_calls</text>
+  <text x="800" y="228" font-size="12" fill="#374151">Checks what was</text>
+  <text x="800" y="246" font-size="12" fill="#374151">actually returned</text>
+
+  <!-- Row 3 -->
+  <rect x="30" y="282" width="880" height="70" rx="10" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+  <text x="48" y="312" font-size="14" font-weight="bold" fill="#111827">Tool routing</text>
+  <text x="48" y="334" font-size="12" fill="#6B7280">which function</text>
+  <text x="320" y="322" font-size="13" fill="#111827">hard-code one tool</text>
+  <text x="580" y="322" font-size="13" font-weight="bold" fill="#111827">TOOLS[name](**args)</text>
+  <text x="800" y="314" font-size="12" fill="#374151">Any tool the</text>
+  <text x="800" y="332" font-size="12" fill="#374151">model picks</text>
+
+  <text x="470" y="382" text-anchor="middle" font-size="15" font-weight="bold" fill="#111827">Same loop. Safer defaults. Video 09 adds more guardrails.</text>
+</svg>

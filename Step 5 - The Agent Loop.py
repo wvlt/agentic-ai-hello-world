@@ -141,6 +141,8 @@ for q in questions:
 # MAGIC
 # MAGIC **Key takeaway:** you just wrote an agent from scratch: **LLM + tools + loop + memory**.
 # MAGIC
+# MAGIC Prefer the paced version? See **[videos/08-agent-loop](videos/08-agent-loop/README.md)** in the video series.
+# MAGIC
 # MAGIC Next: **Step 6 - Tracing with MLflow** (seeing inside the agent's head).
 
 # COMMAND ----------

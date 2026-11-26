@@ -49,6 +49,10 @@ Every term used in the series, in plain English, and the video that introduces i
 | **Strict vs lenient model** | A strict model rejects broken tool messages with an error; a lenient one silently accepts them, hiding bugs. | 07 |
 | **Parallel tool calls** | Several tool calls in one model reply. Claude does this; the Databricks Llama 3.3 endpoint returns one per reply. | 06, 07 |
 | **Narrow tool** | A tool that does the work in code and returns a small, exact result, instead of dumping raw data. | 07 |
+| **Termination** | How the loop decides to stop: usually "no more tool calls" (final answer), or a step/time/cost limit. | 08, 09 |
+| **max_steps** | A cap on loop iterations. Stops a confused model from requesting tools forever. Your first guardrail. | 08 |
+| **Multi-tool routing** | Looking up `TOOLS[name]` so the loop can run whichever function the model picked, instead of hard-coding one. | 08 |
+| **Guardrail** | A limit or check that keeps the agent safe: step caps, allow-lists, validation, human approval. | 08 (step limit), 09 |
 
 ## Coming in later videos
-`termination`, `guardrail` (08-09) | `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12)
+`trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12) | frameworks & deployment (13)
