@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1040" height="520" fill="#FFFFFF"/>
+
+  <text x="520" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Errors as results, not crashes</text>
+  <text x="520" y="58" text-anchor="middle" font-size="14" fill="#6B7280">Ask: "What is the order total for customer 999?"</text>
+
+  <!-- LEFT: crash -->
+  <rect x="28" y="80" width="480" height="370" rx="20" fill="#FEF2F2" stroke="#EF4444" stroke-width="3"/>
+  <rect x="28" y="80" width="480" height="52" rx="20" fill="#FEE2E2"/>
+  <rect x="28" y="112" width="480" height="20" fill="#FEE2E2"/>
+  <text x="268" y="112" text-anchor="middle" font-size="17" font-weight="bold" fill="#991B1B">Exception escapes</text>
+
+  <g font-size="13">
+    <rect x="52" y="156" width="432" height="36" rx="8" fill="#FFFFFF" stroke="#FCA5A5" stroke-width="2"/>
+    <text x="268" y="179" text-anchor="middle" fill="#111827">tool: get_order_total(999)</text>
+
+    <rect x="52" y="208" width="432" height="36" rx="8" fill="#FFFFFF" stroke="#FCA5A5" stroke-width="2"/>
+    <text x="268" y="231" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#B91C1C">raise ValueError("unknown customer")</text>
+
+    <rect x="52" y="264" width="432" height="100" rx="12" fill="#7F1D1D"/>
+    <text x="268" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">Traceback (most recent call last)</text>
+    <text x="268" y="324" text-anchor="middle" font-size="13" fill="#FECACA">ValueError: unknown customer</text>
+    <text x="268" y="346" text-anchor="middle" font-size="13" fill="#FECACA">Cell died. Loop gone.</text>
+  </g>
+  <text x="268" y="410" text-anchor="middle" font-size="14" font-weight="bold" fill="#B91C1C">Agent cannot recover.</text>
+  <text x="268" y="432" text-anchor="middle" font-size="12" fill="#6B7280">You restart the notebook.</text>
+
+  <!-- RIGHT: result -->
+  <rect x="532" y="80" width="480" height="370" rx="20" fill="#ECFDF5" stroke="#10B981" stroke-width="3"/>
+  <rect x="532" y="80" width="480" height="52" rx="20" fill="#D1FAE5"/>
+  <rect x="532" y="112" width="480" height="20" fill="#D1FAE5"/>
+  <text x="772" y="112" text-anchor="middle" font-size="17" font-weight="bold" fill="#065F46">Caught -> tool result</text>
+
+  <g font-size="13">
+    <rect x="556" y="156" width="432" height="36" rx="8" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="2"/>
+    <text x="772" y="179" text-anchor="middle" fill="#111827">tool: get_order_total(999)</text>
+
+    <rect x="556" y="208" width="432" height="36" rx="8" fill="#FFFFFF" stroke="#6EE7B7" stroke-width="2"/>
+    <text x="772" y="231" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#047857">except -> "error: unknown customer"</text>
+
+    <rect x="556" y="264" width="432" height="36" rx="8" fill="#FFFFFF" stroke="#93C5FD" stroke-width="2"/>
+    <text x="772" y="279" text-anchor="middle" font-size="11" fill="#6B7280">role: tool</text>
+    <text x="772" y="295" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="12" fill="#1D4ED8">content: "error: unknown customer"</text>
+
+    <rect x="556" y="316" width="432" height="70" rx="12" fill="#047857"/>
+    <text x="772" y="346" text-anchor="middle" font-size="14" font-weight="bold" fill="#FFFFFF">LLM: "I could not find customer 999."</text>
+    <text x="772" y="368" text-anchor="middle" font-size="12" fill="#A7F3D0">Loop continues. Notebook alive.</text>
+  </g>
+  <text x="772" y="420" text-anchor="middle" font-size="14" font-weight="bold" fill="#047857">Agent recovers.</text>
+  <text x="772" y="442" text-anchor="middle" font-size="12" fill="#6B7280">Failure is just another observation.</text>
+
+  <text x="520" y="490" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Tools return results - including failures.</text>
+</svg>

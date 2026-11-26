@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="540" viewBox="0 0 1040 540" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1040" height="540" fill="#FFFFFF"/>
+
+  <text x="520" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#111827">Caps that stop a runaway agent</text>
+  <text x="520" y="58" text-anchor="middle" font-size="14" fill="#6B7280">"Done" is not only "no more tool_calls".</text>
+
+  <!-- 2x2 grid of stop cards -->
+  <!-- Card 1 -->
+  <rect x="28" y="84" width="480" height="180" rx="18" fill="#FFFBEB" stroke="#F59E0B" stroke-width="2.5"/>
+  <circle cx="68" cy="124" r="20" fill="#F59E0B"/>
+  <text x="68" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="102" y="130" font-size="17" font-weight="bold" fill="#111827">Step limit</text>
+  <text x="56" y="170" font-size="14" fill="#374151">for step in range(max_steps)</text>
+  <text x="56" y="198" font-size="13" fill="#6B7280">Confused models can request tools forever.</text>
+  <rect x="56" y="218" width="420" height="28" rx="8" fill="#FFFFFF" stroke="#FDE68A" stroke-width="1.5"/>
+  <text x="266" y="237" text-anchor="middle" font-size="12" font-family="Menlo, Consolas, monospace" fill="#92400E">Stopped: reached max_steps</text>
+
+  <!-- Card 2 -->
+  <rect x="532" y="84" width="480" height="180" rx="18" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5"/>
+  <circle cx="572" cy="124" r="20" fill="#3B82F6"/>
+  <text x="572" y="130" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="606" y="130" font-size="17" font-weight="bold" fill="#111827">Token / cost budget</text>
+  <text x="560" y="170" font-size="14" fill="#374151">Sum usage.total_tokens each step</text>
+  <text x="560" y="198" font-size="13" fill="#6B7280">Every failed step still costs a model call.</text>
+  <rect x="560" y="218" width="420" height="28" rx="8" fill="#FFFFFF" stroke="#BFDBFE" stroke-width="1.5"/>
+  <text x="770" y="237" text-anchor="middle" font-size="12" font-family="Menlo, Consolas, monospace" fill="#1D4ED8">Stopped: token budget exceeded</text>
+
+  <!-- Card 3 -->
+  <rect x="28" y="284" width="480" height="180" rx="18" fill="#FEF2F2" stroke="#EF4444" stroke-width="2.5"/>
+  <circle cx="68" cy="324" r="20" fill="#EF4444"/>
+  <text x="68" y="330" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="102" y="330" font-size="17" font-weight="bold" fill="#111827">Truncation</text>
+  <text x="56" y="370" font-size="14" fill="#374151">finish_reason == "length"</text>
+  <text x="56" y="398" font-size="13" fill="#6B7280">No tool_calls ` finished. Text may be cut off.</text>
+  <rect x="56" y="418" width="420" height="28" rx="8" fill="#FFFFFF" stroke="#FECACA" stroke-width="1.5"/>
+  <text x="266" y="437" text-anchor="middle" font-size="12" font-family="Menlo, Consolas, monospace" fill="#B91C1C">Stopped: reply was truncated</text>
+
+  <!-- Card 4 -->
+  <rect x="532" y="284" width="480" height="180" rx="18" fill="#ECFDF5" stroke="#10B981" stroke-width="2.5"/>
+  <circle cx="572" cy="324" r="20" fill="#10B981"/>
+  <text x="572" y="330" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">4</text>
+  <text x="606" y="330" font-size="17" font-weight="bold" fill="#111827">Repeated tool call</text>
+  <text x="560" y="370" font-size="14" fill="#374151">Same name + same args, again</text>
+  <text x="560" y="398" font-size="13" fill="#6B7280">Sticky loops burn tokens without progress.</text>
+  <rect x="560" y="418" width="420" height="28" rx="8" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="1.5"/>
+  <text x="770" y="437" text-anchor="middle" font-size="12" font-family="Menlo, Consolas, monospace" fill="#047857">Stopped: repeated the same tool call</text>
+
+  <text x="520" y="506" text-anchor="middle" font-size="15" fill="#374151">Also: unknown tool -> error result | write tool -> require approval</text>
+  <text x="520" y="530" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Stop cleanly. Never crash. Never burn quietly.</text>
+</svg>

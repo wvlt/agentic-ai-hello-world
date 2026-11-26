@@ -48,4 +48,4 @@ Guardrails beyond a step limit, error retries, human approval (Video 09). MLflow
 * Claude Haiku often batches parallel tool calls in one reply (e.g. both cities at once). Llama 3.3 on Databricks returns **one tool call per reply**, so the same question needs more loop iterations. The loop hides that difference: keep going until there are no more tool calls.
 
 ## Next
-Video 09 - Keeping agents safe (coming soon)
+[Video 09 - Keeping agents safe](../09-safe-agents/README.md)

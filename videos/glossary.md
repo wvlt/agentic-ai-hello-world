@@ -53,6 +53,11 @@ Every term used in the series, in plain English, and the video that introduces i
 | **max_steps** | A cap on loop iterations. Stops a confused model from requesting tools forever. Your first guardrail. | 08 |
 | **Multi-tool routing** | Looking up `TOOLS[name]` so the loop can run whichever function the model picked, instead of hard-coding one. | 08 |
 | **Guardrail** | A limit or check that keeps the agent safe: step caps, allow-lists, validation, human approval. | 08 (step limit), 09 |
+| **Errors as results** | Catch tool exceptions and send the error text back as the tool message, so the loop stays alive and the model can recover. | 09 |
+| **Allow-list** | Only run tools whose names appear in your approved `TOOLS` dict - reject anything else. | 09 |
+| **Read vs write tools** | Reads look up or calculate; writes change the world. Gate writes behind human approval (or an `allow_writes` flag). | 09 |
+| **Repeat detector** | Fingerprint tool name + arguments; stop if the same call repeats beyond a limit. | 09 |
+| **Token / time budget** | Cap total tokens or wall-clock seconds across the whole agent run, not just one call. | 09 |
 
 ## Coming in later videos
 `trace`, `span` (10) | `retrieval` (11) | `evaluation`, `judge` (12) | frameworks & deployment (13)

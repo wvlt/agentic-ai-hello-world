@@ -64,4 +64,5 @@ Every video folder has the same shape:
 | 06 [Giving the model hands: your first tool](06-first-tool/README.md) | Ready |
 | 07 [The golden rules of tools](07-tool-rules/README.md) | Ready |
 | 08 [The agent loop](08-agent-loop/README.md) | Ready |
-| 09-13 | Planned (see [course-map.md](course-map.md)) |
+| 09 [Keeping agents safe](09-safe-agents/README.md) | Ready |
+| 10-13 | Planned (see [course-map.md](course-map.md)) |
